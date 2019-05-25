@@ -1,0 +1,48 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<!-- Fengyuan Chen's Datepicker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js" integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
+
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+{% block content %}
+
+<link href="{% static 'css/wallpaper.css' %}" rel="stylesheet">
+<div class="row" >
+  <div class="col-md-5 offset-md-2">
+      <h1 style="margin-top: 50px;" >Create a task</h1><hr>   
+      <form method='POST' action="" >{% csrf_token %}
+      <h5> <b> {{form|crispy}} </b> </h5>
+      <input type="submit" class="btn btn-primary" value="Post" id="mybutton"/>
+      </form>
+      
+  </div>
+
+  <div class="col-md-4 " style="margin:50px; margin-top: 100px;">
+    
+    <img src="{%static 'img/memo.png' %}" height="300"> 
+  
+  <h3 id="left_margins"> <b> Help Pod </b></h3>
+  <p id="left_margins"> We are here to help you in any task- on demand</p>
+ 
+   
+   
+  </div>
+</div>
+
+
+<!-- <script>
+  $(function () {
+    $("#id_service_date").datepicker({
+      format:'mm/dd/yyyy',
+      
+    });
+  });
+    
+
+</script> -->
+      {% endblock content %}

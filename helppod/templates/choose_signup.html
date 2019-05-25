@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+{% block content %}
+
+<link href="{% static 'css/wallpaper.css' %}" rel="stylesheet">
+
+
+<div class="col-md-12 offset-md-3" >
+    <h3 style="margin-top: 50px;"> Sign Up </h3>
+    <div class="row"  >
+        <div class="col-md-3 offset-md-1" id="task_style" >  
+            <img src="{%static 'img/client.png' %}" height="300">           
+            <a href='{% url "signup" %}' class="btn btn-primary" role="button" id="mybutton" style="margin-left:60px;">As a Client</a>            
+        </div>
+
+        <div class="col-md-3 offset-md-1" id="task_style">
+            <img src="{%static 'img/helper.png' %}" height="300"> 
+            <a href='{% url "hsignup" %}' class="btn btn-primary" role="button" id="mybutton" style="margin-left:60px;">As a Helper</a>   
+        </div>
+    </div>
+</div>
+{% endblock content %}

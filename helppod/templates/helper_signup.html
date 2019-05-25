@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+<link href="{% static 'css/sucess.css' %}" rel="stylesheet">
+
+<div class="col-md-4 offset-md-2">
+    <h3> Welcome</h3>
+    <form method='POST' action="" >{% csrf_token %}
+        {{ form|crispy }}
+               <input type="submit" class="btn btn-primary" value="{{ title }}"/>
+    </form>
+</div>
+
+
+{% endblock content %}
+

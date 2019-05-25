@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+
+{% block content %}
+<!-- <div class="col-md-4 offset-md-2">
+    <h3> Welcome</h3>
+    <form method='POST' action="" >{% csrf_token %}
+        {{ form|crispy }}
+               <input type="submit" class="btn btn-primary" value="{{ title }}"/>
+    </form>
+</div> -->
+
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<div id="login-box">
+		<div class="left-box">
+            <h1>Sign Up</h1>
+            <form method='POST' action="" >{% csrf_token %}
+            {{form.username}}
+            {{form.password}}
+            {{form.Confirm_Password}}
+            {{form.email}}
+            {{form.phone}}
+            {{form.address}}
+			<!-- <input type="text" name="username" placeholder="Username"/>
+			<input type="text" name="email" placeholder="E-Mail"/>
+			<input type="text" name="password" placeholder="Password"/>
+			<input type="text" name="password2" placeholder="Retype-Password"/>
+			<input type="text" name="address" placeholder="Address"/>
+            <input type="text" name="phone" placeholder="Phone "/> -->
+           
+			
+            <input type="submit" name="SignUp Button" value="Sign Up"/>
+            </form>
+		</div>
+		<div class="right-box">
+			<span class="signinwith">Sign in with<br/>Social Network</span>
+			<button class="social facebook">Log in with Facebook</button>
+			<button class="social twitter">Log in with Twitter</button>
+			<button class="social google">Log in with Google</button>
+	</div>
+	<div class="or">OR</div>
+{% endblock content %}

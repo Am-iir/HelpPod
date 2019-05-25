@@ -1,0 +1,181 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	color:#000;
+}
+/*
+.tophead{
+	padding: 0px 0px;
+}
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} */
+.container{
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* nav{
+    background:black;
+    color: #fff;
+    padding: 15px 0px;
+    margin-bottom: 0px;
+}
+ nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li{
+    display: inline-block;
+    padding-right:30px;
+}   */
+.bannerwrapper{
+	background: url(35.png) no-repeat center;
+	height: 650px;
+}
+.all .display-1 {
+	padding-top: 280px;
+	font-weight: 600;
+	
+	
+}
+.all p{
+	margin-top:0px;
+	text-align: left;
+	font-size:32px;
+	color:black;
+}
+.bb{
+	width: 20%;
+	float: right;
+}
+.aa{
+	width: 80%;
+	float: left;
+}
+.cc{
+	width: 100%;
+	background-color: #797D7D;
+	color: #E6F5F5;
+	height: 700px;	
+}
+.cc img{
+	width: 100%;
+	background-color: #797D7D;
+	color: #E6F5F5;
+	height: 700px;	
+}
+.abt{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.abt h3{
+	font-size: 50px;
+}
+.abt p{
+	font-size: 19px;
+	padding: 5px;
+	padding-bottom: 35px;
+	text-align: justify;
+}
+.col-md-8{
+	background-color: #E1E6E6;
+}
+/* .row{
+	margin-left: 50px;
+	margin-top: 20px;
+
+} */
+.col-md-3{
+	margin-right: 10px;
+	background-color: #E3E8E8;
+	margin-left: 40px;
+	padding: 5px;
+}
+.annd{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.annd h1,h2{
+	text-align: center;
+	padding-top: 20px;
+}
+.annd .col-md-4{
+	height: 400px;
+	margin-left: 0px;
+	font-size: 15px;
+
+}
+.col-md-4 h4{
+	text-align: center;
+	margin-bottom:20px;
+	
+}
+.col-md-4 img{
+	margin-left:100px;
+	
+}
+/* .annd .row .col-md-4 img{
+	width: 40px;
+	height:50px;
+} */
+.work{
+	margin-top: 25px;
+	width: 100%;
+	height: 600px;
+	background-color: #E8EDED;
+}
+.work p{
+	font-size: 22px;
+	margin-bottom: 42px;
+}
+.work h1,p{
+	text-align: center;
+	position: relative;
+	margin-top: 44px;
+}
+.work {
+	position: absolute;
+}
+.work h1,p{ 
+	position: relative;
+	margin-top: 95px; 
+	 }
+.ss.asd{
+	width: 50%;
+	float: left;
+}
+.ss.assd img{
+	width: 50%;
+	float: left;
+}
+.asaa{
+	width: 100%;
+	height: 200px;
+	background-color: #B6B8B8;
+}
+.HelpPod{
+	width: 70%;
+	float: left;
+}
+.help{
+	width: 30%;
+	float: left;
+}
+.containerr {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}

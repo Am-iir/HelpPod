@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+{% block content %}
+<!-- <div class="col-md-4 offset-md-2">
+    <h3> Welcome</h3>
+    <form method='POST' action="" >{% csrf_token %}
+        {{ form|crispy }}        
+        <input type="submit" class="btn btn-primary" value="{{ title }}"/>
+    </form>
+</div> -->
+<link href="{% static 'css/loginstyle.css'%}" rel="stylesheet">
+<body>
+    <div class="loginbox">
+    <img class="user" src="{%static 'img/2.png' %}">
+    <h3>Sign In Here</h3>
+    <form method='POST' action="" >{% csrf_token %}
+      <div class="InputBox">
+        <!-- <input type="text" name="" placeholder="Username"> -->
+        {{form.username}}
+        <span><i class="fa fa-user" aria-hidden="true"></i></span>
+        </div>
+        <div class="InputBox">
+        {{form.password}}
+          <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+        </div>
+        <div class="Submit">
+        <input type="submit" name="" value="Login">
+        
+
+        </form>
+        <a href="#">Forget Password</a>
+        </div>
+
+{% endblock content %}

@@ -1,0 +1,107 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: url(../new-tech.jpg);
+ background-size: 100% 700px;
+ font-family: sans-serif; 
+ background-repeat: no-repeat; 
+}
+
+.loginbox
+{
+  position: absolute;
+  padding:50px 30px;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  min-height: 200px;
+  background: #2F5A7A;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.user{
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+
+
+}
+h3{
+  margin: 0;
+  padding: 0 0 20px;
+  color: #ccc;
+  text-align: center;
+}
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+.loginbox input[type="text"]
+.loginbox input[type="password"]
+
+}
+{
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 50px;
+  color: #262626;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+}
+.loginbox input[type="text"]:focus,
+.loginbox input[type="password"]:focus
+
+}
+  {border-bottom: 2px solid #f00;
+    }
+    .InputBox
+    {
+      position: relative;
+      
+    }
+    .InputBox span
+    {
+      position:absolute;
+      top: 4px;
+      color: black;
+    }
+    .InputBox>input{
+      margin-left:15px;
+      width: 200px;
+    }
+    .InputBox>span{
+      margin-top: -2px;
+    }
+    
+      .loginbox input[type="Submit"]
+      {
+        border:solid;
+        outline: none;
+        height: 30px;
+        font-size: 15px;
+        background:#2F5A7A;
+        color:grey;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+
+      .loginbox a
+      {
+        color: #262626;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration:none;
+        text-align: center;
+      }
+       
+       
+
+      

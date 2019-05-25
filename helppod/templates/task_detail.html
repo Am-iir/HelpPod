@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+{% load staticfiles %}
+
+{% block title %}
+    {{instance.title}} | {{block.super}} 
+           
+{% endblock title %}
+
+    
+{% block content%} 
+<link href="{% static 'css/wallpaper.css' %}" rel="stylesheet">
+
+<div class="col-md-6 offset-md-2" >           
+    
+    <h1>
+        {{ title }} 
+     </h1>  <hr>
+     <p> 
+     Posted at : {{instance.timestamp}}  <br> <hr>
+    Posted by : {{instance.user_name}}<br> <hr>
+     {{instance.description}}  <br> <hr>
+     Service Date : {{ instance.service_date}}<br><hr>
+     Must be completed within : {{instance.service_time}} <br><hr>
+     Pick Up Location : {{ instance.pickup_location}} <br> <hr>
+     Drop Location : {{ instance.drop_location}} <br> <hr>
+     Phone No: {{instance.phone}}<br><hr>
+     <a href='{% url "accept" id=instance.id %}' class="btn btn-primary" role="button" id="mybutton" >Accept</a>   
+    </p>  
+    
+</div>
+
+<!-- <script>
+        function myFunction() {
+    alert("You have accepted a task!");
+}
+</script> -->
+{% endblock content%}
+
+     

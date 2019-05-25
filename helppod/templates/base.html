@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{% block title %} HelpPod {% endblock %}</title> 
+
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/mycss.css' %}" rel="stylesheet">    
+   
+  </head> 
+    <body>
+      {% include 'nav_bar.html' %}
+      
+
+    {%block content %}
+    {% endblock %}
+    </body>
+</html>
+    
+    

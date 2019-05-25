@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+ 
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+
+
+{% block content %}
+
+
+<link href="{% static 'css/alijastyle.css'%}" rel="stylesheet">
+<link href="{% static 'css/mycss.css'%}" rel="stylesheet">
+<!-- <link href="{% static 'css/wallpaper.css' %}" rel="stylesheet"> -->
+
+
+<!-- <div class="tophead">
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div> -->
+    <div class="bannerwrapper">
+      <div class="container">
+          <div class="all">
+          <h3 class="display-1">HelpPod</h3>
+          <p>We run your errands in time and with quality</p>
+        </div>
+    </div>
+    </div>
+            </div>
+            <div class="container-fluid abt mt-5 pt-5" >
+        <div class="row m-0">
+        <div class="col-md-6">
+          <div class="thumbnail">
+                <img src="{%static 'img/abt.png' %}" width="100%" height="auto">
+          </div>
+        </div>
+        <div class="col-md-6 bg-white" id="aboutus">
+                <h3 class="m-0">About Us</h3>
+                <p>HelpPod is a personal concierge application which will complete any requested task through effective matching of clients with HelpPod helpers. It helps to maintain work-life balance of our clients’ busy schedules and add hours to their days.  Meanwhile, it also occupies the abeyant population by giving them with the task opportunities that would otherwise go missed. Through our platform, busy people will be able to share their workload with people who have plenty time to spare – and thus, manage to form a bridge between the two.
+    
+                HelpPod will help our clients get a personal assistant on demand to do anything and everything at any time. It’s a one-stop shop for all your task needs where we solve your daily and iterating chores while you focus on things that lie close to your heart.
+     </p>
+              </div>
+          </div>
+        </div>
+        <div class="annd" id='ourservice'>
+            <h1> <b>Our Services</b></h1>
+            <h2>We are here to help you in any task- on demand</h2> <br>
+
+        <div class="row">
+                <div class="col-md-4"  >
+                        <img src="{%static 'img/drop.jpg' %}" alt="" height="100px" width="100px">
+
+                    <h4 >Pick up and Drop</h4>
+                    Want a delivery solution for your business? Or you want us to help with picking and dropping your items/documents? HelpPod is here for you.
+
+                </div>
+
+                <div class="col-md-4" >
+                    <img src="{%static 'img/taa.jpg' %}" alt="" height="100px" width="100px">
+                    <h4>Other Task</h4>
+
+                    Give us any other task that you don't have time for. It can be anything from making grocery shopping to picking up clothes from laundry!
+
+                </div>
+
+                <div class="col-md-4" >
+                        <img src="{%static 'img/emergv.png' %}" alt="" height="100px" width="100px" >
+                        <h4>Emergencies</h4>
+                    Have you forgotten an important document at home but don't have time to hurry your way to home? Don't worry, just give us a task request and we'll complete it for you at no time! Save half of the time in return!
+
+
+                 </div>
+
+        </div>
+       <!-- <div class="row">
+      <div class="col-md-4" >
+        
+            
+            <h3>Pick up and Drop</h3>
+            <div class="caption">
+              <p>Want a delivery solution for your business? Or you want us to help with picking and dropping your items/documents? Dailo is here for you.</p>
+            </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+              <p>Give us any other task that you don't have time for. It can be anything from making a key duplicate to picking up clothes from laundry!</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+            
+            <h3>Emergency</h3>
+            <div class="caption">
+              <p>Have you forgotten an important document at home but don't have time to hurry your way to home? Don't worry, just give us a task request and we'll complete it for you at no time! Save half of the time in return!</p>
+            </div>
+        </div>
+      </div>
+    </div> -->
+    </div>    
+             </body>
+            
+
+{% endblock %}
