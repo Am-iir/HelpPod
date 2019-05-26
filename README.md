@@ -6,7 +6,7 @@
 
 A Project made for asian hackathon 2019 
 
-This project takes task from clients , tasks can be such as pick up and delivery, buying grocery items etc . And the helpers viwes the available task and accept the one they can complete within the time frame.
+This project takes task from clients , tasks can be such as pick up and delivery, buying grocery items etc . And the helpers views the available task and accept the one they can complete within the time frame.
 
 <h3> Requirements </h3>
 
