@@ -10,6 +10,6 @@ This project takes task from clients , tasks can be such as pick up and delivery
 
 <h3> Requirements </h3>
 
-pip install virtualenv
-pip install django==1.11
+pip install virtualenv <br>
+pip install django==1.11 <br>
 pip install django-crispy-forms
